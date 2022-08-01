@@ -24,7 +24,7 @@ function App() {
      
      {pokemons.map((pokemon, index) => (
       <div className="flex flex-col justify-center items-center">
-        <h1>{pokemon.name}</h1>
+        <h1>{pokemon.name[0].toUpperCase()+ pokemon.name.substring(1)}</h1>
         <img src={`${POKEMON_IMAGE_API}${index+1}.png`} alt="pokemon image" />
       </div>
      ))}
