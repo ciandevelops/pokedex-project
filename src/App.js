@@ -26,8 +26,8 @@ function App() {
 
      
      {pokemons.map((pokemon, index) => (
-      <div key={index} className="flex flex-col justify-center items-center border border-black rounded-md">
-                <img src={`${POKEMON_IMAGE_API}${index+1}.png`} alt="pokemon" />
+      <div key={index} className="flex flex-col justify-center items-center border border-black rounded-md py-4">
+                <img className="hover:scale-125 cursor-pointer" src={`${POKEMON_IMAGE_API}${index+1}.png`} alt="pokemon" />
         <h1>{pokemon.name[0].toUpperCase()+ pokemon.name.substring(1)}</h1>
 
       </div>
