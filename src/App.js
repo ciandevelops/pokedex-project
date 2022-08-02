@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Navbar from "./components/Navbar";
-import { POKEMON_API_URL, POKEMON_IMAGE_API } from "./config";
+import { POKEMON_API_URL } from "./config";
 
 
 function App() {
